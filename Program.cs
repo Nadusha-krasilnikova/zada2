@@ -1,10 +1,20 @@
 ﻿// даны два числа. Показать большее и меньшее число
-int a=10;
-int b=15;
+Console.WriteLine("введите два числа");
+int a=int.Parse(Console.ReadLine());
+int b=int.Parse(Console.ReadLine());
 int max=a;
-if (a>max) max=a;
-if (b>max) max=b;
-
+int min=b;
+if (a>b)
+{
+    max=a;
+    min=b;
+}
+else
+{
+    max=b;
+    min=a;
+}
 Console.Write("максимальное число ");
 Console.WriteLine(max);
-
+Console.Write("минимальное число ");
+Console.WriteLine(min);
